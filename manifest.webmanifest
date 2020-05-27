@@ -1,0 +1,18 @@
+{
+    "name": "Instagram",
+    "short_name": "Instagram",
+    "icons": [
+        {
+            "src": "./images/instaIcon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./images/instaIcon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone"
+  }

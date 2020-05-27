@@ -1,0 +1,197 @@
+:root {
+    --main-bg-color: black;
+    --bars-bg-color: #121212;
+    --hr-color: #171717;
+    --grey-text: rgb(213, 213, 213);
+    --white-text: rgb(250, 250, 250);
+    --insta-purple: rgb(150, 15, 150);
+    --insta-yellow: rgb(250, 170, 75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bars-bg-color);
+    color: var(--grey-text);
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.topBar {
+    height: 44px;
+    background-color: var(--bars-bg-color);
+    z-index: 999;
+    padding: 0 16px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-text);
+}
+
+.bottomBar {
+    height: 44px;
+    background-color: var(--bars-bg-color);
+    padding: 0 16px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.white {
+    filter: invert(93%) sepia(0%) saturate(30%) hue-rotate(48deg) brightness(105%) contrast(107%);
+}
+
+hr {
+    background-color: #171717;
+    border: 0 none;
+    color: #171717;
+    height: 1.5px;
+}
+
+.bottomBar > img {
+    height: 24px;
+}
+
+.content {
+    position: absolute;
+    top: 44px;
+    background-color: var(--main-bg-color);
+    height: 87vh;
+    max-height: 87vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.stories {
+    height: 90px;
+}
+
+.pTopBar {
+    height: 60px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: var(--white-text);
+    line-height: 1.75rem;
+}
+
+.pContent {
+    width: 100%;
+    height: 100vw;
+    background-size: cover;
+}
+
+.pBottomBar {
+    height: 40px;
+    padding: 4px 16px 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pCaption {
+    height: 40px;
+    padding: 4px 16px 0 16px;
+}
+
+.pBottomBar > .left > img{
+    padding: 8px;
+}
+
+.userPic {
+    border-radius: 50%;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.storyPic > img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.stories {
+    padding: 3px 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 64px;
+    margin: 0px 5px 5px 10px;
+}
+
+.storyPic {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--insta-yellow), var(--insta-purple));
+    padding: 3px;
+    margin: auto;
+}
+
+.storyPic > h5 {
+    align-self: center;
+    text-align: center;
+}
+
+.pCaption {
+    padding-left: 16px;
+}
+
+.pCaption > h5{
+    display: inline;
+    
+}
+
+.pCaption > .cName {
+    color: var(--white-text);
+}
+
+.post {
+    margin-bottom: 10px;
+}
+
+.col1, .col2 {
+    width: 30%;
+    height: 375px;
+    position: absolute;
+}
+
+.col2 {
+    left: 30%;
+}
+
+.numBox {
+    height: 187px;
+    z-index: 999;
+    position: relative;
+}
+
+.empty {
+    width: 24px;
+}
